@@ -1,0 +1,44 @@
+{
+  "name": "eliza-ts",
+  "version": "1.0.0",
+  "description": "A TypeScript implementation of the classic ELIZA chatbot",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "scripts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node --test",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "eliza",
+    "chatbot",
+    "nlp",
+    "weizenbaum",
+    "conversational-ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codeanticode/eliza"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.0.0"
+  }
+}
